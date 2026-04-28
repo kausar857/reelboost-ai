@@ -1,0 +1,118 @@
+Create a modern, responsive web app called “ReelBoost AI” for content creators.
+
+⚠️ IMPORTANT:
+This must be a fully working app with clean UI and smooth performance.
+No placeholders. Everything should function.
+
+--------------------------------------------------
+
+🎯 APP GOAL:
+Help users generate viral hooks, captions, and editing ideas for reels/short videos.
+
+--------------------------------------------------
+
+🎨 DESIGN:
+- Dark theme (black + deep purple)
+- Neon purple glow accents
+- Clean modern UI
+- Glassmorphism cards
+- Mobile-first responsive
+
+--------------------------------------------------
+
+🧠 MAIN FEATURES:
+
+1. INPUT SECTION:
+
+Create a form where user enters:
+- Topic (e.g., cars, gaming, motivation)
+- Platform (dropdown: Instagram, YouTube Shorts, TikTok)
+- Tone (dropdown: Hype, Emotional, Funny, Cinematic)
+
+Button:
+“Generate Ideas”
+
+--------------------------------------------------
+
+2. OUTPUT SECTION (DYNAMIC):
+
+After clicking generate, show:
+
+🔥 HOOK IDEAS (5 results)
+Example:
+- “Wait for this drop 🔥”
+- “You won’t believe this edit…”
+- “This changed everything 😳”
+
+📝 CAPTIONS (3 results)
+Example:
+- “Editing this took hours but worth it 🔥”
+- “Drop a like if this hits hard 💥”
+
+🎬 EDITING IDEAS:
+- Suggested transitions
+- Suggested pacing (fast cuts / slow cinematic)
+- Suggested effects (glitch, zoom, beat sync)
+
+⏱ VIDEO STRUCTURE:
+- Hook (0–3 sec)
+- Main content (3–10 sec)
+- Drop/Climax (10–15 sec)
+
+--------------------------------------------------
+
+3. CTA (VERY IMPORTANT):
+
+At bottom of results add:
+
+“Want us to edit this for you?”
+
+Buttons:
+- Contact on WhatsApp
+  https://wa.me/919912473190?text=Hi%2C%20I%20want%20video%20editing
+
+- DM on Instagram
+  https://instagram.com/apex_motion_studio_
+
+(Open in new tab)
+
+--------------------------------------------------
+
+4. GENERATION LOGIC:
+
+- Create results dynamically based on topic + tone
+- Do NOT use static repeated text
+- Make outputs feel realistic and engaging
+
+--------------------------------------------------
+
+5. ANIMATIONS:
+
+- Smooth fade-in when results appear
+- Button click animation
+- Hover glow effects
+- Smooth transitions
+
+--------------------------------------------------
+
+6. EXTRA FEATURES:
+
+- “Copy” button for each result
+- Loading animation while generating
+- Reset button
+
+--------------------------------------------------
+
+7. PERFORMANCE:
+
+- Fast loading
+- No lag
+- Clean structure
+
+--------------------------------------------------
+
+8. FINAL RESULT:
+
+- Looks like a real SaaS tool
+- Useful for creators
+- Encourages users to contact Apex Motion Studio
