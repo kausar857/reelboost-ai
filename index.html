@@ -1,16 +1,22 @@
 <script>
 async function generate() {
-  const topic = document.getElementById("topic").value;
+  try {
+    const topic = document.getElementById("topic").value;
 
-  const res = await fetch("/api/generate", {
-    method: "POST",
-    headers: {"Content-Type": "application/json"},
-    body: JSON.stringify({ topic })
-  });
+    const res = await fetch("/api/generate", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({ topic })
+    });
 
-  const data = await res.json();
+    const data = await res.json();
 
-  document.getElementById("output").innerText =
-    JSON.stringify(data, null, 2);
+    document.getElementById("output").innerText =
+      JSON.stringify(data, null, 2);
+
+  } catch (err) {
+    document.getElementById("output").innerText =
+      "Error loading AI";
+  }
 }
 </script>
