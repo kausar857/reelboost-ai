@@ -2,10 +2,52 @@
 <html>
 <head>
   <title>ReelBoost AI</title>
+  <style>
+    body {
+      background: #0a0a0a;
+      color: white;
+      font-family: Arial;
+      text-align: center;
+      padding: 50px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+      border: none;
+    }
+    button {
+      background: purple;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
 </head>
-<body style="background:black;color:white;font-family:sans-serif;text-align:center;margin-top:100px;">
+<body>
+
   <h1>🚀 ReelBoost AI</h1>
-  <p>Your AI app is live 🔥</p>
-  <p>Backend setup in progress...</p>
+  <p>Generate viral hooks for your reels</p>
+
+  <input id="topic" placeholder="Enter your topic..." />
+  <br>
+  <button onclick="generate()">Generate Hook</button>
+
+  <p id="output"></p>
+
+  <script>
+    async function generate() {
+      const topic = document.getElementById("topic").value;
+
+      const res = await fetch("/api/generate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ topic })
+      });
+
+      const data = await res.json();
+      document.getElementById("output").innerText = data.result || "Error";
+    }
+  </script>
+
 </body>
 </html>
